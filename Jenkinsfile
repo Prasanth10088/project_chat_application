@@ -10,11 +10,10 @@ pipeline {
 
         stage('Git Clone') {
             steps {
-                git(
-                    branch: 'qa',
+                    git branch: 'qa',
                     credentialsId: 'github-credentials',
                     url: 'https://github.com/Infoez-kiaq/Frontend.git'
-                )
+                
             }
         }
 
